@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
     return (
         <>
-        <div className=" bg-neutral py-12 mt-5 ">
+        <div className=" bg-neutral py-12 mt-10 ">
             <footer className="container mx-auto footer sm:footer-horizontal  text-neutral-content p-10">
                 <aside>
                     <svg

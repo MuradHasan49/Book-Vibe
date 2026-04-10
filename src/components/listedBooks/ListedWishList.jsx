@@ -29,7 +29,7 @@ const ListedWishList = ({ sortingType }) => {
     return (
       <div className="h-[50vh] border border-gray-600 rounded-lg my-5 shadow-lg  flex flex-col items-center justify-center gap-2">
         <SlDirections className="text-9xl animate-pulse" />
-                <h2 className="font-bold text-3xl">No read list data found</h2>
+                <h2 className="font-bold text-3xl">No Wish list data found</h2>
       </div>
     );
   }
