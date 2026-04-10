@@ -13,12 +13,12 @@ const ListedReadList = ({ sortingType }) => {
     if (sortingType) {
       if (sortingType === "pages") {
         const sortedData = [...readList].sort(
-          (a, b) => a.totalPages - b.totalPages,
+          (a, b) => b.totalPages - a.totalPages,
         );
         console.log(sortedData);
         setFilteredReadList(sortedData);
       } else if (sortingType === "rating") {
-        const sortedData = [...readList].sort((a, b) => a.rating - b.rating);
+        const sortedData = [...readList].sort((a, b) => b.rating - a.rating);
         console.log(sortedData);
         setFilteredReadList(sortedData);
       }

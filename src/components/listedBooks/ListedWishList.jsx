@@ -13,12 +13,12 @@ const ListedWishList = ({ sortingType }) => {
     if (sortingType) {
       if (sortingType === "pages") {
         const sortedData = [...wishList].sort(
-          (a, b) => a.totalPages - b.totalPages,
+          (a, b) => b.totalPages - a.totalPages,
         );
         console.log(sortedData);
         setFilteredWishList(sortedData);
       } else if (sortingType === "rating") {
-        const sortedData = [...wishList].sort((a, b) => a.rating - b.rating);
+        const sortedData = [...wishList].sort((a, b) => b.rating - a.rating);
         console.log(sortedData);
         setFilteredWishList(sortedData);
       }
