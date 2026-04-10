@@ -21,7 +21,7 @@ const ErrorPage = () => {
           }}
           className="text-[12rem] font-black leading-none tracking-tighter"
         >
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-cyan-600 drop-shadow-sm">
+          <span className="bg-clip-text text-transparent bg-linear-to-r from-green-400 to-cyan-600 drop-shadow-sm">
             404
           </span>
         </motion.h1>
