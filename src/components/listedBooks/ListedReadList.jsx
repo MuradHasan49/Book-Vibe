@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { BookContext } from "../../context/BookContext";
 import BookCard from "../ui/BookCard";
+import { SlDirections } from "react-icons/sl";
 
 const ListedReadList = ({ sortingType }) => {
   const { readList } = useContext(BookContext);
@@ -26,7 +27,8 @@ const ListedReadList = ({ sortingType }) => {
 
   if (filteredReadList.length === 0) {
     return (
-      <div className="h-[50vh] bg-gray-100 flex items-center justify-center ">
+      <div className="h-[50vh] border border-gray-600 rounded-lg my-5 shadow-lg  flex flex-col items-center justify-center gap-2">
+        <SlDirections className="text-9xl animate-pulse" />
         <h2 className="font-bold text-3xl">No read list data found</h2>
       </div>
     );
