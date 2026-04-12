@@ -71,7 +71,7 @@ const Navbar = () => {
           </div>
           <Link to={"/"}>
           <div className=" flex items-center gap-1">
-          <img className="w-12" h-12 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlWB8E_qe2Wb_BQAiyxooHYQy8DwCDDi2Tzw&s" alt="" />
+          <img className="w-12" h-12 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlWB8E_qe2Wb_BQAiyxooHYQy8DwCDDi2Tzw&s" alt="Logo-image" />
           <h2 className="font-extrabold text-gray-500 text-[12px] md:text-lg lg:text-xl ">BOOK VIBE</h2> 
           </div>
             
