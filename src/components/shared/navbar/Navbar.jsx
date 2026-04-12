@@ -63,12 +63,16 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               {links}
+              <div className="flex items-center my-4 gap-2">
+                          <button className="btn btn-success text-white">Signin</button>
+          <button className="btn btn-accent text-white">Signup</button>
+              </div>
             </ul>
           </div>
           <Link to={"/"}>
           <div className=" flex items-center gap-1">
           <img className="w-12" h-12 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlWB8E_qe2Wb_BQAiyxooHYQy8DwCDDi2Tzw&s" alt="" />
-          <h2 className="font-extrabold text-gray-500 text-xl ">BOOK VIBE</h2> 
+          <h2 className="font-extrabold text-gray-500 text-[12px] md:text-lg lg:text-xl ">BOOK VIBE</h2> 
           </div>
             
           </Link>
@@ -76,7 +80,7 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
-        <div className="navbar-end gap-4 ">
+        <div className="navbar-end gap-4 hidden lg:flex">
           <button className="btn btn-success text-white">Signin</button>
           <button className="btn btn-accent text-white">Signup</button>
         </div>
